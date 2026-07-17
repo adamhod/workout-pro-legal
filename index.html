@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WorkoutPro</title>
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #1a1a1f;
+      --subtext: #5f5f6a;
+      --accent: #00994f;
+      --border: #e5e5ea;
+      --card-bg: rgba(0, 0, 0, 0.03);
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0a0a0f;
+        --text: #ffffff;
+        --subtext: #adadb2;
+        --accent: #00ff94;
+        --border: rgba(255, 255, 255, 0.12);
+        --card-bg: rgba(255, 255, 255, 0.05);
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.6;
+      padding: 32px 20px;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    main {
+      max-width: 560px;
+      width: 100%;
+      text-align: center;
+    }
+    h1 {
+      font-size: 44px;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+      margin: 0 0 8px;
+    }
+    h1 .accent { color: var(--accent); }
+    .tagline {
+      color: var(--subtext);
+      font-size: 15px;
+      margin-bottom: 40px;
+    }
+    .links {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-bottom: 40px;
+    }
+    @media (max-width: 480px) {
+      .links {
+        grid-template-columns: 1fr;
+      }
+    }
+    .link-card {
+      display: block;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px 20px;
+      text-decoration: none;
+      color: var(--text);
+      transition: border-color 0.15s ease, transform 0.15s ease;
+    }
+    .link-card:hover {
+      border-color: var(--accent);
+      transform: translateY(-2px);
+    }
+    .link-card .title {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+    .link-card .desc {
+      color: var(--subtext);
+      font-size: 13px;
+    }
+    footer {
+      color: var(--subtext);
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Workout<span class="accent">Pro</span></h1>
+    <p class="tagline">Legal &amp; support documents for the WorkoutPro iOS app</p>
+
+    <div class="links">
+      <a class="link-card" href="privacy-policy.html">
+        <div class="title">Privacy Policy</div>
+        <div class="desc">What data we collect and how it's handled</div>
+      </a>
+      <a class="link-card" href="support.html">
+        <div class="title">Support</div>
+        <div class="desc">Get help, report bugs, send feedback</div>
+      </a>
+    </div>
+
+    <footer>© 2026 WorkoutPro. All rights reserved.</footer>
+  </main>
+</body>
+</html>
