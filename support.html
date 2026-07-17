@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WorkoutPro Support</title>
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #1a1a1f;
+      --subtext: #5f5f6a;
+      --accent: #00994f;
+      --border: #e5e5ea;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0a0a0f;
+        --text: #ffffff;
+        --subtext: #adadb2;
+        --accent: #00ff94;
+        --border: rgba(255, 255, 255, 0.12);
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.6;
+      padding: 32px 20px;
+    }
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+    h1 {
+      font-size: 32px;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+      margin: 0 0 4px;
+    }
+    h1 .accent { color: var(--accent); }
+    .subtitle {
+      color: var(--subtext);
+      font-size: 14px;
+      margin-bottom: 32px;
+    }
+    h2 {
+      font-size: 20px;
+      font-weight: 800;
+      margin: 32px 0 8px;
+    }
+    h3 {
+      font-size: 16px;
+      font-weight: 700;
+      margin: 20px 0 6px;
+    }
+    p, li {
+      color: var(--text);
+      font-size: 15px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    hr {
+      border: 0;
+      border-top: 1px solid var(--border);
+      margin: 40px 0;
+    }
+    .contact {
+      background: var(--border);
+      padding: 16px 20px;
+      border-radius: 10px;
+      margin-top: 24px;
+    }
+    code {
+      background: var(--border);
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 13px;
+    }
+    footer {
+      color: var(--subtext);
+      font-size: 13px;
+      margin-top: 40px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Workout<span class="accent">Pro</span> Support</h1>
+    <p class="subtitle">Get help with the app</p>
+
+    <p>
+      Thanks for using WorkoutPro. If you run into an issue, have a question,
+      or want to send feedback, the fastest way to reach me is by email.
+    </p>
+
+    <div class="contact">
+      <strong>Email:</strong>
+      <a href="mailto:adam.w.hoddinott@gmail.com">adam.w.hoddinott@gmail.com</a>
+    </div>
+
+    <h2>Reporting a bug</h2>
+    <p>
+      To help me fix your issue as fast as possible, please include the
+      following when you write in:
+    </p>
+    <ul>
+      <li>Your device model (e.g. iPhone 16 Pro)</li>
+      <li>Your iOS version (Settings → General → About → Software Version)</li>
+      <li>The WorkoutPro version (visible on the App Store listing, or under Account → Menu)</li>
+      <li>A short description of what you were doing when the issue happened</li>
+      <li>The exact steps to reproduce it, if possible</li>
+      <li>A screenshot or screen recording, if the bug is visual</li>
+    </ul>
+
+    <h2>Common questions</h2>
+
+    <h3>How do I delete my account?</h3>
+    <p>
+      Open the app, tap the <strong>Account</strong> tab, tap the menu icon in
+      the top-right, and choose <strong>Delete Account</strong>. This
+      permanently removes your profile, all workout history, and your local
+      profile photo.
+    </p>
+
+    <h3>How do I sign out?</h3>
+    <p>
+      <strong>Account</strong> tab → menu icon → <strong>Sign Out</strong>.
+    </p>
+
+    <h3>How do I reset my password?</h3>
+    <p>
+      On the login screen, tap <strong>Forgot Password?</strong> and enter
+      your email. You'll receive a reset link — it may take a few minutes to
+      arrive.
+    </p>
+
+    <h3>Where does my workout data live?</h3>
+    <p>
+      Your account and workout data are stored in Supabase (a secure cloud
+      database). Your profile photo is stored only on your device — it is
+      never uploaded. Full details are in the
+      <a href="privacy-policy.html">Privacy Policy</a>.
+    </p>
+
+    <h3>The suggested weight for a new exercise feels too heavy or too light — is that normal?</h3>
+    <p>
+      Starting loads are calculated to be a safe starting point for new gym
+      goers. You can modify the load on any set — the program will adapt for
+      subsequent sessions based on what you actually lifted.
+    </p>
+
+    <h3>What does "each" or "per dumbbell" mean on dumbbell exercises?</h3>
+    <p>
+      For dumbbell exercises, the main weight shown is the
+      <strong>combined weight of both dumbbells</strong>. Beneath it, a
+      smaller line shows the weight of each individual dumbbell.
+    </p>
+
+    <h2>Feedback and feature requests</h2>
+    <p>
+      I'd love to hear from you. Send suggestions, ideas, or general feedback
+      to the email above — I read every message.
+    </p>
+
+    <footer>© 2026 WorkoutPro. All rights reserved.</footer>
+  </main>
+</body>
+</html>
